@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inconsolata:wght@200..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body {
+        width: 1150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: #98d3fe;
+        line-height: 1.2;
+      }
+      .section-one {
+        width: 100%;
+      }
+      .blue {
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      .blue img {
+        width: 600px;
+        height: 500px;
+      }
+      .metamorphisis {
+        margin-top: 380px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 400px;
+        grid-gap: 5px;
+        align-items: stretch;
+        margin: 0 auto;
+      }
+      .metamorphisis img {
+        width: 100%;
+        object-fit: cover;
+        height: 120px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+      }
+      img {
+        border-radius: 10px;
+        opacity: 0.9;
+        transition: all 300ms ease-in-out;
+      }
+      .metamorphisis img:hover {
+        transform: scale(1.2);
+      }
+      .butt {
+        text-align: center;
+      }
+      button {
+        color: black;
+        background-color: white;
+        margin: 15px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1px solid #69a1ca;
+        font-weight: bold;
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        transform: scale(1.1);
+        color: white;
+        background-color: #98d3fe;
+      }
+      hr {
+        border: none;
+        border-top: 2px solid #8ac5f0;
+      }
+      .first {
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+      }
+      footer {
+        font-family: "Great Vibes", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>A moment of wings, a lifetime of wonder.</h1>
+      <hr />
+    </header>
+    <section class="section-one">
+      <div class="blue">
+        <img
+          class="first"
+          src="https://i.pinimg.com/736x/4d/6d/7a/4d6d7a8c4c5f5fba1dc29261846a420c.jpg"
+          alt=""
+        />
+
+        <div class="metamorphosis-container">
+          <p>
+            The journey of a butterfly is a symbol of transformation and growth.
+            From a tiny egg to a crawling caterpillar, then a resting chrysalis,
+            and finally emerging as a graceful butterfly—each stage reflects
+            resilience and beauty. Just as a butterfly embraces change, we too
+            can evolve, adapting and soaring towards new heights.
+          </p>
+          <hr />
+          <p>
+            What begins as a tiny egg, unnoticed and fragile, soon transforms
+            into a crawling caterpillar, hungry for growth. With time, it
+            surrenders to stillness within the cocoon, a phase of quiet
+            preparation, unseen by the world yet full of promise. And then, the
+            miracle unfolds—a delicate butterfly emerges, its wings carrying the
+            whispers of resilience and renewal.
+          </p>
+          <hr />
+          <p>
+            Like the butterfly, we too undergo seasons of change. Life’s
+            challenges mold us, pushing us to grow, to pause, and finally to
+            rise. Every struggle, like the cocoon, is not an end but a necessary
+            step toward something greater.
+          </p>
+          <div class="metamorphisis">
+            <img
+              src="https://i.pinimg.com/474x/02/77/a9/0277a92a2abccfaa1b9204988bff61b1.jpg"
+              alt="Egg Stage"
+            />
+            <img
+              src="https://i.pinimg.com/736x/72/2d/73/722d73ebd8aa9fbe5d70fd55ffcc33b8.jpg"
+              alt="Caterpillar Stage"
+            />
+            <img
+              src="https://i.pinimg.com/736x/f4/72/e1/f472e1860d35a31b9eebe6bae53eb97c.jpg"
+              alt="Chrysalis Stage"
+            />
+          </div>
+          <div class="butt"><button>Butterflies</button></div>
+        </div>
+      </div>
+    </section>
+    <footer><p>Coded by Truket Lema(Avril)</p></footer>
+  </body>
+  <script>
+    function butterfly() {
+      let name = prompt("What's your name?");
+      let color = prompt(
+        "What color butterfly do you mostly like?"
+      ).toLowerCase();
+
+      if (color === "blue") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize transformation, wish, and happiness!"
+        );
+      } else if (color === "black") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize rebirth, mystery, and new beginnings!"
+        );
+      } else if (color === "white") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize purity, spiritual guidance, and messages from loved ones!"
+        );
+      } else if (color === "yellow") {
+        alert(
+          "Oww, " + name + ", you symbolize joy, hope, and new opportunities!"
+        );
+      } else if (color === "red") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize passion, power, and strong emotions!"
+        );
+      } else if (color === "orange") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize creativity, energy, and encouragement!"
+        );
+      } else if (color === "green") {
+        alert(
+          "Oww, " + name + ", you symbolize growth, renewal, and prosperity!"
+        );
+      } else if (color === "purple") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize spiritual wisdom, transformation, and enlightenment!"
+        );
+      } else if (color === "pink") {
+        alert("Oww, " + name + ", you symbolize love, kindness, and healing!");
+      } else if (color === "brown") {
+        alert(
+          "Oww, " +
+            name +
+            ", you symbolize stability, comfort, and grounding energy!"
+        );
+      } else {
+        alert(
+          "Oww, " +
+            name +
+            ", sorry, I don't recognize that butterfly color. But all butterflies are beautiful!"
+        );
+      }
+    }
+
+    let clickbutton = document.querySelector("button");
+    clickbutton.addEventListener("click", butterfly);
+  </script>
+</html>
